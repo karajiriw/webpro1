@@ -1,0 +1,31 @@
+div { 
+    text-align: center;
+ }
+
+.facebook {
+    margin-top: 10px;
+}
+
+#name{
+    font-size: 45px;
+    color: green;
+}
+
+a:link {
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a:active {
+    color: blue;
+}
+
+a:visited {
+    color: green; text-decoration: none;
+}
+
+.pass:first-letter {
+    font-size: 300%;
+    color: blue;
+    font-weight: bolder;
+}
