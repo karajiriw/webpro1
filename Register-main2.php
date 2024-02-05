@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>สมัครเรียน ณ มหาลัยแห่งหนึ่ง</title>
 </head>
-
-    <form action="Register-Back.php" method="get">
-        <table border="1" align="center" width="550">
+<body>
+<form action="Register-main2.php" method="get">
+    <table border="1" align="center" width="550">
             <tr>
                 <td colspan="2" align="center">
                     สมัครเรียน ณ มหาลัยแห่งหนึ่ง
@@ -67,11 +67,35 @@
             </tr>
             <tr>
                 <td colspan="2" align="center">
-                    <input name="btnSubmit" type="submit" value="Submit">
+                    <input name="btnSubmit" type="submit" value="OK">
                     <input name="btnReset" type="reset" value=" Clear ">
                 </td>
             </tr>
         </table>
     </form>
+    <br><br>
+    <?php
+    $name = $_GET['Name'];
+    $gender = $_GET['gender1'];
+    $Nationality = $_GET['Nationality'];
+    $Birthday = $_GET['Birthday'];
+    $Personal = $_GET['Personal'];
+    $Home = $_GET['Home'];
+    $Phon = $_GET['Phon'];
+    $GPA = $_GET['GPA'];
+    $email = $_GET['email'];
+    $A = $_GET['A'];
+    echo "<table align='center' width='20%' border='1'>";
+    echo "<tr><td colspan='2' align='center'><b>สมัครเรียน ณ มหาลัยแห่งหนึ่ง</b></td></tr>";
+    echo "<tr><td>ชื่อ-นามสกุล : </td><td align='center'> <i> $name </i></td></tr>";
+    echo "<tr><td>เพศ : </td><td align='center'> <i> $gender </i></td></tr>";
+    echo "<tr><td>วัน/เดือน/ปี เกิด : </td><td align='center'> <i> $Nationality </i></td></tr>";
+    echo "<tr><td>เลขบัตรประชาชน : </td><td align='center'> <i> $Personal </i></td></tr>";
+    echo "<tr><td>ที่อยู่ปัจุบัน : </td><td align='center'> <i> $Home </i></td></tr>";
+    echo "<tr><td>เบอร์โทร : </td><td align='center'> <i> $Phon </i></td></tr>";
+    echo "<tr><td>เกรดเฉลี่ยสะสม : </td><td align='center'> <i> $GPA </i></td></tr>";
+    echo "<tr><td>สมัครเข้าคณะ/หลักสูตร : </td><td align='center'> <i> $A </i></td></tr>";
+    echo "<tr><td>E-mail : </td><td align='center'> <i> $email </i></td></tr>";
+    ?>
 </body>
 </html>
