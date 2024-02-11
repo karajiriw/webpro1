@@ -33,10 +33,6 @@
                 <td><input type="date" name="Birthday" size="50" value=""></td>
             </tr>
             <tr>
-                <td>อายุ : </td>
-                <td><input type="number" name="Age" max="100" min="1" step="1" value=""></td>
-            </tr>
-            <tr>
                 <td>เลขบัตรประชาชน : </td>
                 <td><input type="text" maxlength="13" name="Personal" size="50" value=""></td>
             </tr>
